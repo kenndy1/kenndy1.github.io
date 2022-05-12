@@ -1,0 +1,100 @@
+.about{
+    padding-bottom: 2rem;
+
+    &-bio-image{
+        height: 50vh;
+        width: 100%;
+        background:
+        linear-gradient(
+            to right,
+            rgba($primarycolor, 0.6),
+            rgba($primarycolor, 0.3)
+        ),
+        url('../nathan-dumlao-z7EJoGtNHDg-unsplash.jpg') center top;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+        p{
+            margin-bottom: 2rem;
+        }
+
+    }
+    
+    
+
+    &-bio{
+        width: 80%;
+        text-align: center;
+
+        .text-secondary{
+            padding-bottom: 1rem;
+        }
+    }
+
+    .jobs{
+        width: 50vw;
+        margin: 2rem auto 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+
+        &-jobs{
+            background:lighten($primarycolor, 10%);
+            padding: 0.5rem;
+            border-bottom: 5px solid $secondarycolor;
+            line-height: 1.5rem;
+            h2, h3{
+                margin: 0.5rem 0;
+            }
+            h6{
+                margin: 0.3rem 0;
+                font-size: .8rem;
+                color: $secondarycolor
+            }
+            a{
+                color: $secondarycolor;
+                text-decoration: none;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+            li{
+                list-style-type: none;
+            }
+            li::before {
+                content: "• "; color: $secondarycolor;
+            }
+
+            
+        }
+    }
+
+    .social-icons{
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer{
+        transform: 
+            rotate(90deg)
+            translate(-3rem,-5rem)
+        ;
+    }
+
+ 
+    
+}
+.small-bio{
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    text-align: left;
+}
+.about-bio{
+    width: 60%;
+}
+.secondary{
+    color: $secondarycolor;
+}

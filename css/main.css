@@ -1,3 +1,5 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -12,8 +14,8 @@
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.6)), to(rgba(39, 39, 39, 0.3))), url("../kendo.jpg") center top;
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.6), rgba(39, 39, 39, 0.3)), url("../kendo.jpg") center top;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.6)), to(rgba(255, 255, 255, 0.3))), url("../nathan-dumlao-z7EJoGtNHDg-unsplash.jpg") center top;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.3)), url("../nathan-dumlao-z7EJoGtNHDg-unsplash.jpg") center top;
   background-size: cover;
 }
 
@@ -22,11 +24,120 @@
   padding-bottom: 1rem;
   margin-bottom: 1rem;
   border-bottom: 2px solid #fff;
+  padding-top: 1rem;
 }
 
 .home-name-last {
-  color: #ff652f;
+  color: #209bf3;
   font-weight: 700;
+}
+
+.typing-animation {
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: 0 #209bf3;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0em;
+  /* Adjust as needed */
+  -webkit-animation: typing-animation 5s steps(7) infinite, blink-caret 0.8s infinite;
+          animation: typing-animation 5s steps(7) infinite, blink-caret 0.8s infinite;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes typing-animation {
+  0% {
+    width: 0;
+  }
+  25% {
+    width: 30%;
+  }
+  48% {
+    width: 70%;
+  }
+  50% {
+    width: 100%;
+  }
+  55% {
+    width: 100%;
+  }
+  75% {
+    width: 70%;
+  }
+  85% {
+    width: 30%;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes typing-animation {
+  0% {
+    width: 0;
+  }
+  25% {
+    width: 30%;
+  }
+  48% {
+    width: 70%;
+  }
+  50% {
+    width: 100%;
+  }
+  55% {
+    width: 100%;
+  }
+  75% {
+    width: 70%;
+  }
+  85% {
+    width: 30%;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+@-webkit-keyframes blink-caret {
+  from {
+    border-color: transparent;
+  }
+  to {
+    border-color: #209bf3;
+  }
+}
+
+@keyframes blink-caret {
+  from {
+    border-color: transparent;
+  }
+  to {
+    border-color: #209bf3;
+  }
+}
+
+.center-with-space {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 4rem;
+  padding-top: 10rem;
+}
+
+.colored {
+  color: #209bf3;
+  font-weight: bold;
 }
 
 .menu-btn {
@@ -46,7 +157,7 @@
   top: 0.5rem;
   width: 28px;
   height: 3px;
-  background: #fff;
+  background: #000;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
@@ -57,7 +168,7 @@
   top: -8px;
   width: 28px;
   height: 3px;
-  background: #fff;
+  background: #000;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
@@ -68,7 +179,7 @@
   top: 8px;
   width: 28px;
   height: 3px;
-  background: #fff;
+  background: #000;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
@@ -118,7 +229,7 @@
           justify-content: center;
   height: 100vh;
   overflow: hidden;
-  background: #272727;
+  background: #ffffff;
   list-style-type: none;
   padding-right: 1rem;
   -webkit-transform: translateY(-100%);
@@ -145,7 +256,7 @@
 }
 
 .nav .menu-nav-item.active > a {
-  color: #ff652f;
+  color: #209bf3;
 }
 
 .nav .menu-nav-link {
@@ -159,7 +270,7 @@
 }
 
 .nav .menu-nav-link:hover {
-  color: #ff652f;
+  color: #209bf3;
 }
 
 .menu-nav-item:nth-child(1) {
@@ -189,8 +300,8 @@
 .about-bio-image {
   height: 50vh;
   width: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.6)), to(rgba(39, 39, 39, 0.3))), url("../kendo.jpg") center top;
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.6), rgba(39, 39, 39, 0.3)), url("../kendo.jpg") center top;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.6)), to(rgba(255, 255, 255, 0.3))), url("../nathan-dumlao-z7EJoGtNHDg-unsplash.jpg") center top;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.3)), url("../nathan-dumlao-z7EJoGtNHDg-unsplash.jpg") center top;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -221,7 +332,7 @@
 }
 
 .about .jobs {
-  width: 60vw;
+  width: 50vw;
   margin: 2rem auto 0 auto;
   display: -ms-grid;
   display: grid;
@@ -231,9 +342,10 @@
 }
 
 .about .jobs-jobs {
-  background: #414141;
+  background: white;
   padding: 0.5rem;
-  border-bottom: 5px solid #ff652f;
+  border-bottom: 5px solid #209bf3;
+  line-height: 1.5rem;
 }
 
 .about .jobs-jobs h2, .about .jobs-jobs h3 {
@@ -242,6 +354,26 @@
 
 .about .jobs-jobs h6 {
   margin: 0.3rem 0;
+  font-size: .8rem;
+  color: #209bf3;
+}
+
+.about .jobs-jobs a {
+  color: #209bf3;
+  text-decoration: none;
+}
+
+.about .jobs-jobs a:hover {
+  text-decoration: underline;
+}
+
+.about .jobs-jobs li {
+  list-style-type: none;
+}
+
+.about .jobs-jobs li::before {
+  content: "• ";
+  color: #209bf3;
 }
 
 .about .social-icons {
@@ -259,6 +391,20 @@
           transform: rotate(90deg) translate(-3rem, -5rem);
 }
 
+.small-bio {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  text-align: left;
+}
+
+.about-bio {
+  width: 60%;
+}
+
+.secondary {
+  color: #209bf3;
+}
+
 .projects {
   padding-bottom: 2rem;
 }
@@ -266,8 +412,6 @@
 .projects-bio-image {
   height: 30vh;
   width: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.6)), to(rgba(39, 39, 39, 0.3))), url("../kendo.jpg") center top;
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.6), rgba(39, 39, 39, 0.3)), url("../kendo.jpg") center top;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -301,13 +445,20 @@
 
 .projects-item {
   position: relative;
-  border-bottom: 5px solid #ff652f;
+  border-bottom: 5px solid #209bf3;
   overflow: hidden;
   cursor: pointer;
 }
 
+.projects-item p {
+  font-size: 70%;
+  text-align: center;
+  width: 100%;
+}
+
 .projects-item img {
   width: 100%;
+  height: 90%;
 }
 
 .projects-item::after {
@@ -317,7 +468,7 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background: #ff652f;
+  background: #209bf3;
   opacity: 0;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
@@ -374,6 +525,16 @@
           transform: rotate(90deg) translate(-3rem, -5rem);
 }
 
+.proj-footer {
+  font-size: 1rem;
+  position: fixed;
+  bottom: 0.4rem;
+  right: 1rem;
+  text-align: right;
+  padding: 2rem;
+  color: #000;
+}
+
 .contact {
   height: 100%;
   padding-top: 40vh;
@@ -388,8 +549,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.6)), to(rgba(39, 39, 39, 0.3))), url("../kendo.jpg") center top;
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.6), rgba(39, 39, 39, 0.3)), url("../kendo.jpg") center top;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.6)), to(rgba(255, 255, 255, 0.3))), url("../nathan-dumlao-z7EJoGtNHDg-unsplash.jpg") center top;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.3)), url("../nathan-dumlao-z7EJoGtNHDg-unsplash.jpg") center top;
   background-size: cover;
 }
 
@@ -398,13 +559,18 @@
   margin-bottom: 2rem;
 }
 
+.contact i {
+  padding-top: 1rem;
+}
+
 .contact-list {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  grid-gap: 2rem;
+  -ms-grid-columns: .5fr;
+      grid-template-columns: .5fr;
+  grid-gap: 1rem;
   font-size: 1.2rem;
+  margin: 0 3rem 0 3rem;
 }
 
 .contact .social-icons {
@@ -470,12 +636,26 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background: #272727;
-  color: #fff;
+  background: #ffffff;
+  color: #000;
   height: 100vh;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Roboto Mono', monospace;
   line-height: 1;
+}
+
+body ::-moz-selection {
+  background: #209bf3;
+  color: #fff;
+}
+
+body ::selection {
+  background: #209bf3;
+  color: #fff;
 }
 
 h1, h2, h3 {
@@ -483,12 +663,12 @@ h1, h2, h3 {
 }
 
 a {
-  color: #fff;
+  color: #000;
   text-decoration: none;
 }
 
 .text-secondary {
-  color: #ff652f;
+  color: #209bf3;
 }
 
 header {
@@ -514,7 +694,7 @@ main .social-icons a {
 }
 
 main .social-icons a:hover {
-  color: #ff652f;
+  color: #209bf3;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
@@ -526,6 +706,27 @@ footer {
   right: 1rem;
   text-align: right;
   padding: 1rem;
-  color: #fff;
+  color: #000;
+  margin-right: 1rem;
 }
-/*# sourceMappingURL=main.css.map */
+
+.span {
+  color: #209bf3;
+}
+
+.top-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 15%;
+}

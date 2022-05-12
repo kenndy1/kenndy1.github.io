@@ -3,6 +3,9 @@ const hamburger = document.querySelector('.menu-btn_burger')
 const nav = document.querySelector('.nav')
 const menuNav = document.querySelector('.menu-nav')
 const navItems = document.querySelectorAll('.menu-nav-item')
+let year = document.querySelector('#year')
+let swap = document.querySelector('#swapping-places')
+
 
 
 let showMenu = false
@@ -27,3 +30,6 @@ function toggleMenu() {
         showMenu = false
     }
 }
+
+
+onload = () => {year.innerHTML = new Date().getFullYear()}

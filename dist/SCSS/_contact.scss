@@ -1,0 +1,39 @@
+.contact{
+    height: 100%;
+    padding-top: 40vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background:
+        linear-gradient(
+            to right,
+            rgba($primarycolor, 0.6),
+            rgba($primarycolor, 0.3)
+        ),
+        url('../nathan-dumlao-z7EJoGtNHDg-unsplash.jpg') center top;
+    background-size: cover;
+    h2{
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    i{
+        padding-top: 1rem;
+    }
+    
+
+    &-list{
+        display: grid;
+        grid-template-columns: .5fr;
+        grid-gap: 1rem;
+        font-size: 1.2rem;
+        margin : 0 3rem 0 3rem;
+    }
+
+    .social-icons{
+        position: initial;
+        margin-top: 2rem;
+    }
+
+}
